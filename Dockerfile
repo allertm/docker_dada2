@@ -13,5 +13,6 @@ LABEL maintainer="rabdill@umn.edu"
 LABEL org.label-schema.version = "1.8.0"
 
 RUN R -e 'source("https://bioconductor.org/biocLite.R"); biocLite("dada2")'
+RUN R -e 'source("https://bioconductor.org/biocLite.R"); biocLite("DECIPHER")'
 
 CMD ["R"]
